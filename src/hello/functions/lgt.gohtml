@@ -1,0 +1,28 @@
+<DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>
+			Hello World!
+			Predefined Global functions
+		</title>
+	</head>
+	<body>
+{{/*For Greater and les and equal*/}}
+		{{ if gt .Score1 .Score2 }}
+			SCORE 1 > SCORE 2
+		{{ end }}
+
+		{{ if lt .Score1 .Score2 }}
+			SCORE 1 < SCORE 2 
+		{{ end }}
+
+		{{ if eq .Score1 .Score2 }}
+			SCORE 1 = SCORE 2
+		{{ end }}
+
+		{{ if lt .Score1 10 }}
+			LAST: SCORE 1 < 10
+		{{ end }}
+	</body>
+</html>

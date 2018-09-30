@@ -1,0 +1,60 @@
+
+<DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>
+			Hello World!
+			Predefined Global functions
+		</title>
+	</head>
+	<body>
+		#1
+		{{ range . }}
+			{{ . }}
+		{{ end }}
+
+		#2
+		{{ if . }}
+			{{ . }}
+		{{ end }}
+
+		#3
+		{{  range . }}
+			{{ if .Name }}
+				{{ .Name }}
+			{{ end }}
+		{{ end }}
+
+		#4
+		{{ range . }}
+			{{ if and .Name .Admin }}
+				{{ .Name }}
+				{{ .Motto }}
+				{{ .Admin }}
+			{{ end }}
+		{{ end }}
+
+
+
+
+
+
+		<!-- For Greater and les and equal -->
+		{{ if gt .Score1 .Score2 }}
+			SCORE 1 > SCORE 2
+		{{ end }}
+
+		{{ if lt .Score1 .Score2 }}
+			SCORE 1 < SCORE 2 
+		{{ end }}
+
+		{{ if eq .Score1 .Score2 }}
+			SCORE 1 = SCORE 2
+		{{ end }}
+
+		{{ if lt .Score1 10 }}
+			LAST: SCORE 1 < 10
+		{{ end }}
+	</body>
+</html>
